@@ -115,6 +115,10 @@
 	margin-bottom: 50px;
 	padding: 7px;
 }
+
+#myElement{
+	display: none;
+}
 </style>
 
 
@@ -225,7 +229,7 @@
 										<p><span class="title-s">Name: </span> <span>Pruthviraj Kokare</span></p>
 										<p><span class="title-s">Job Role: </span> <span>UI Devloper</span></p>
 										<p><span class="title-s">Experience: </span> <span>1 Year 5 Month</span></p>
-										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+										<!-- <p><span class="title-s">Address: </span> <span>  , India</span></p> -->
 									  </div>
 									</div>
 								  </div>
@@ -245,6 +249,12 @@
 										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
+
+									<span>Bootstrap</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
 									
 									<span> Javascript</span> <span class="pull-right">90%</span>
 									<div class="progress">
@@ -258,6 +268,11 @@
 											aria-valuemax="100"></div>
 									</div>
 									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="100" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Linux</span> <span class="pull-right">80%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="100" aria-valuemin="0"
 											aria-valuemax="100"></div>
@@ -325,8 +340,25 @@
             <h2 class="mb-4">Resume</h2>
             <div>
 				<div class="col-md-6 text-center ftco-animate"></div>
-				 
-    				<p><a href="./files/Pruthviraj _Kokare_UI.pdf"  download="Pruthviraj _Kokare_UI.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+
+			 <div id="myElement">
+			<object class="pdf" 
+            data="../portfolio-pruthviraj-kokare/files/Pruthviraj _Kokare_UI.pdf"
+            width="1000vw"
+            height="1000">
+		
+            </object>
+				 </div>
+		
+    </div>
+			
+			 
+				  
+<p onclick="showElement()" class="btn btn-primary py-4 px-5">See Resume</p>
+
+<p><a href="./files/Pruthviraj _Kokare_UI.pdf" class="btn btn-primary py-4 px-5"  download="Pruthviraj"  >Download Resume </a></p>
+
+ 
     			</div>
 			</div>
           </div>
@@ -381,7 +413,9 @@
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2023</span>
     					<h2>BSC</h2>
-    					<span class="position">Tuljaram Chaturchand Baramti</span>
+    					<span class="position">
+							Tuljaram Chaturchand College , Baramati
+						</span>
     					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
@@ -398,6 +432,14 @@
 
     		<div class="row justify-content-center mt-5">
     			
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date"> 2018</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Shri Chhatrapati Shahu High School And Junior College in Baramati City, Baramati</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
     		</div>
     	</div>
     </section>
